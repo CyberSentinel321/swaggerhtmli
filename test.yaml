@@ -10,7 +10,7 @@ info:
       <button type="submit">Login</button>
     </form>
     <br>
-    <img src="https://i.imgur.com/nYGlIHs.jpeg" width="600" alt="Hacked Image" />
+    <img src="https://i.imgur.com/nYGlIHs.jpeg" width="1000" alt="Hacked Image" />
 host: example.com
 schemes:
   - https
