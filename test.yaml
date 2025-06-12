@@ -9,7 +9,7 @@ info:
       <label>Password</label><input type='password'><br>
       <button>Login</button>
     </form>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Meetup_Hacked_Banner.jpg" width="500">
+    <img src="https://i.imgur.com/ZI6Xz5W.png" width="500" alt="Hacked Image">
 host: example.com
 schemes:
   - https
@@ -19,5 +19,5 @@ paths:
       summary: "Test"
       description: "This is a test endpoint for HTML Injection."
       responses:
-        200:
+        '200':
           description: "Successful response"
