@@ -1,23 +1,24 @@
 swagger: "2.0"
 info:
-  title: "Fake Login Page"
+  title: "HTML Injection: Fake Login PoC"
   version: "1.0.0"
   description: |
-    <h2>HTML Injection : Fake Login</h2>
-    <form>
-      <label>Username</label><input type='text'><br>
-      <label>Password</label><input type='password'><br>
-      <button>Login</button>
+    <h2>⚠️ Fake Login Page</h2>
+    <form style="display:flex; flex-direction:column; width:300px;">
+      <label>👤 Username</label><input type="text" style="margin-bottom:10px;" />
+      <label>🔒 Password</label><input type="password" style="margin-bottom:10px;" />
+      <button type="submit">Login</button>
     </form>
-    <img src="https://i.imgur.com/ZI6Xz5W.png" width="500" alt="Hacked Image">
+    <br>
+    <img src="https://i.imgur.com/ZI6Xz5W.png" width="400" alt="Hacked Image" />
 host: example.com
 schemes:
   - https
 paths:
   /test:
     get:
-      summary: "Test"
-      description: "This is a test endpoint for HTML Injection."
+      summary: "Fake Login Test"
+      description: "This endpoint renders a fake login page using HTML Injection PoC."
       responses:
         '200':
-          description: "Successful response"
+          description: "Returns a successful response"
