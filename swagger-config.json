@@ -1,1 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/CyberSentinel321/swaggerhtmli/main/test.yaml",
+  "urls": [
+    {
+      "url": "https://raw.githubusercontent.com/CyberSentinel321/swaggerhtmli/main/test.yaml",
+      "name": "HTML Injection PoC"
+    }
+  ]
+}
 
