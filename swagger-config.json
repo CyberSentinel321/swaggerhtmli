@@ -1,10 +1,6 @@
 {
   "urls": [
     {
-      "url": "https://raw.githubusercontent.com/CyberSentinel321/swaggerhtmli/main/test.yaml",
-      "name": "HTML Injection PoC"
-    },
-    {
       "url": "https://raw.githubusercontent.com/CyberSentinel321/swaggerhtmli/main/test1.yaml",
       "name": "XSS Fake Login PoC"
     }
