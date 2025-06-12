@@ -1,27 +1,23 @@
 swagger: "2.0"
 info:
-  version: "1.0.0"
   title: "Fake Login Page"
+  version: "1.0.0"
   description: |
     <h2>HTML Injection : Fake Login</h2>
     <form>
-      <label>Username</label><br>
-      <input type="text" /><br><br>
-      <label>Password</label><br>
-      <input type="password" /><br><br>
-      <button type="submit">Login</button>
+      <label>Username</label><input type='text'><br>
+      <label>Password</label><input type='password'><br>
+      <button>Login</button>
     </form>
-    <br>
-    <img src="https://i.imgur.com/V3KjVdA.gif" width="100%" alt="Hacked" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Meetup_Hacked_Banner.jpg" width="500">
 host: example.com
-basePath: /
 schemes:
   - https
 paths:
   /test:
     get:
-      summary: "<svg/onload=alert('html injected')>"
-      description: "This is a test endpoint with HTML content"
+      summary: "Test"
+      description: "This is a test endpoint for HTML Injection."
       responses:
         200:
           description: "Successful response"
